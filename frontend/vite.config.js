@@ -11,7 +11,4 @@ export default defineConfig({
       '@': '/src',
     },
   },
-  server: {
-    historyApiFallback: true,
-  },
 });
