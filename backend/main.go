@@ -479,7 +479,7 @@ func handleGeminiEstimate(w http.ResponseWriter, r *http.Request) {
 
 	ctx := context.Background()
 	client, err := genai.NewClient(ctx, &genai.ClientConfig{
-		APIKey:  "AIzaSyC0CVdxYHwSvXTEEHbh3W5JC2-Tm-9z61s",
+		APIKey:  os.Getenv("GEMINI_API_KEY"),
 		Backend: genai.BackendGeminiAPI,
 	})
 	if err != nil {
