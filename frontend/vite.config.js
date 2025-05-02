@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000,
+    historyApiFallback: true,
   },
   build: {
     // ... puedes agregar otras configuraciones aquí
@@ -19,6 +20,7 @@ export default defineConfig({
   // Esto asegura que cualquier ruta no encontrada sirva index.html
   preview: {
     // ... otras configuraciones
+    historyApiFallback: true,
   },
   // Para Vite 4+, usa este middleware para fallback
   // Si usas un servidor personalizado, puedes agregar esto
